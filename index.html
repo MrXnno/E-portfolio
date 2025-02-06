@@ -3,228 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Portfolio de Marwan Malki</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS externe -->
-    <style>
-        /* Ajout de style de base pour un design moderne */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        nav {
-            background-color: #34495e;
-            color: white;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #16a085;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #2c3e50;
-            color: white;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1.1em;
-        }
-
-        .link-btn {
-            background-color: #1abc9c;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .link-btn:hover {
-            background-color: #16a085;
-        }
-
-        .certifications, .diplomes {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .certifications div, .diplomes div {
-            width: 45%;
-            margin: 10px 0;
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        .certifications div h4, .diplomes div h4 {
-            font-size: 1.3em;
-            color: #2980b9;
-        }
-    </style>
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Marwan Malki</h1>
-        <p>Développeur en devenir, passionné par l'informatique et les nouvelles technologies.</p>
+        <div class="logo">Portfolio de Marwan Malki</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#parcours">Parcours Scolaire</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
+    <section id="home">
+        <h1>Bonjour,</h1>
+        <h2>Je suis <span class="highlight">Marwan Malki</span></h2>
+        <p>Développeur passionné par l'informatique et les nouvelles technologies. Découvrez mes compétences, certifications et mon parcours.</p>
+    </section>
+
+    <section id="competences">
+        <h1>Mes Compétences</h1>
         <ul>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#experiences">Expériences</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#diplomes">Diplômes</a></li>
-            <li><a href="#veille">Veille Technologique</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>Réseau : VLAN, SSH, infrastructure réseau, Linux, Windows, base de données</li>
+            <li>Langages informatiques : HTML, CSS, PHP, JavaScript, Python</li>
+            <li>Développement Web : Création de sites et applications web</li>
+            <li>Cybersécurité : Protection des données, gestion des accès, sécurité des équipements</li>
         </ul>
-    </nav>
+    </section>
 
-    <div class="container">
-        <section id="parcours">
-            <h2>🎓 Parcours Scolaire</h2>
-            <ul>
-                <li><strong>2024 - 2025</strong> : BTS SIO - Lycée Turgot</li>
-                <li><strong>2022 - 2024</strong> : Bac STMG, option SIG - Lycée Jules Siegfried</li>
-            </ul>
-        </section>
+    <section id="certifications">
+        <h1>Mes Certifications</h1>
+        <ul>
+            <li>Certification Pix <br> <img src="pix.PNG" width="350"></li>
+            <li>Certification Cisco Packet Tracer <br> <img src="cisco.PNG" width="350"></li>
+            <li>Certification Linux</li>
+            <li>Certification E-Sensibilisation Cyber <br> <img src="sensi.PNG" width="350"></li>
+        </ul>
+    </section>
 
-        <section id="competences">
-            <h2>📚 Compétences</h2>
-            <h3>Techniques</h3>
-            <ul>
-                <li>Développement Web : PHP, HTML/CSS, JavaScript</li>
-                <li>Bases de données : PostgreSQL, MySQL</li>
-                <li>Programmation : Python, PHP, SQL, Bash</li>
-                <li>Configuration systèmes et réseaux</li>
-            </ul>
-            <h3>Générales</h3>
-            <ul>
-                <li>Communication efficace & travail en équipe</li>
-                <li>Gestion de projets & autonomie</li>
-                <li>Adaptabilité & rigueur</li>
-            </ul>
-        </section>
-
-        <section id="experiences">
-            <h2>💼 Expériences Professionnelles</h2>
-            <ul>
-                <li><strong>Réceptionniste d’hôtel</strong> (Mai 2022 - Septembre 2023)</li>
-                <li><strong>Livreur indépendant</strong> (Mars - Juillet 2024)</li>
-                <li><strong>Agent d’accueil en salle de sport</strong> (Septembre 2023 - Février 2024)</li>
-            </ul>
-        </section>
-
-        <section id="certifications">
-            <h2>📜 Certifications</h2>
-            <div class="certifications">
-                <div>
-                    <h4>PIX</h4>
-                    <p>Certificat de compétences numériques validé en 2024.</p>
-                </div>
-                <div>
-                    <h4>ASSR 1 & 2</h4>
-                    <p>Attestations de sécurité routière (2024)</p>
+    <section id="parcours">
+        <h1>Mon Parcours Scolaire</h1>
+        <h2>Mon <span class="highlight">parcours scolaire</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"><img src="turgot.jpg" alt="Lycée"></div>
+                <div class="timeline-content">
+                    <h2>BTS SIO à Turgot</h2>
+                    <span class="date">2024-2026</span>
+                    <p>En cours d'obtention d'un BTS SIO (Informatique) option SISR (Solutions d'infrastructure systèmes et réseaux)</p>
                 </div>
             </div>
-        </section>
-
-        <section id="diplomes">
-            <h2>🎓 Diplômes</h2>
-            <div class="diplomes">
-                <div>
-                    <h4>BTS SIO</h4>
-                    <p>En cours - Prévu en 2025</p>
-                </div>
-                <div>
-                    <h4>Bac STMG</h4>
-                    <p>Option SIG - Lycée Jules Siegfried (2024)</p>
+    
+            <div class="timeline-item">
+                <div class="timeline-icon"><img src="maup.jpg" alt="Lycée Guy de Maupassant"></div>
+                <div class="timeline-content">
+                    <h2>Lycée Guy de Maupassant</h2>
+                    <span class="date">2022-2024</span>
+                    <p>Baccalauréat Technologique STMG option SIG (Système d'Information et de Gestion)</p>
                 </div>
             </div>
-        </section>
+    
+            <div class="timeline-item">
+                <div class="timeline-icon"><img src="lussac.jpg" alt="Collège Gay Lussac"></div>
+                <div class="timeline-content">
+                    <h2>Collège Gay Lussac</h2>
+                    <span class="date">2018-2022</span>
+                    <p>Obtention du brevet des collèges</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="veille">
-            <h2>🔍 Veille Technologique</h2>
-            <p>Je me tiens informé des tendances tech via forums, blogs, et projets open-source sur GitHub.</p>
-        </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Vous pouvez me contacter via mon email ou via mes réseaux sociaux :</p>
 
-        <section id="contact">
-            <h2>🌍 Présence en Ligne</h2>
-            <p><a href="https://www.linkedin.com/in/marwan-5b2794337/" class="link-btn">LinkedIn</a> | <a href="https://github.com/MrXnno" class="link-btn">GitHub</a></p>
-        </section>
-    </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/marwan-malki-5b2794337/">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:marwan@example.com">
+                <img src="mail.png" alt="Email">
+            </a>
+            <a href="https://github.com/MrXnno">
+                <img src="cv.png" alt="GitHub">
+            </a>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2024 Marwan Malki - Tous droits réservés.</p>
+        <p>&copy; 2025 Marwan Malki. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+
     </footer>
 </body>
 </html>
